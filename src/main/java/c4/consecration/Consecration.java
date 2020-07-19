@@ -41,12 +41,12 @@ import net.minecraftforge.fml.common.registry.VillagerRegistry;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
-@Mod(	modid = Consecration.MODID,
-		name = Consecration.MODNAME,
-		version = Consecration.MODVER,
-		dependencies = "required-after:forge@[14.23.4.2705,)",
+@Mod(	  modid = Consecration.MODID,
+		    name = Consecration.MODNAME,
+		    version = Consecration.MODVER,
+		    dependencies = "required-after:forge@[14.23.4.2705,)",
         acceptedMinecraftVersions = "[1.12.2, 1.13)",
-        certificateFingerprint = "5d5b8aee896a4f5ea3f3114784742662a67ad32f")
+        certificateFingerprint = "@FINGERPRINT@")
 public class Consecration {
 
     static {
@@ -55,7 +55,7 @@ public class Consecration {
 
     public static final String MODID = "consecration";
     public static final String MODNAME = "Consecration";
-    public static final String MODVER = "1.0.5";
+    public static final String MODVER = "1.0.6";
 
     @SidedProxy(clientSide = "c4.consecration.proxy.ClientProxy", serverSide = "c4.consecration.proxy.ServerProxy")
     public static IProxy proxy;
